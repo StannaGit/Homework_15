@@ -1,0 +1,30 @@
+GET http://127.0.0.1:5000/books HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://127.0.0.1:5000/books HTTP/1.1
+content-type: application/json
+
+{
+    "books_name" : "Coder",
+    "author": "One",
+    "year_creat": 1200
+}
+
+
+###
+
+PUT http://127.0.0.1:5000/books/1 HTTP/1.1
+content-type: application/json
+
+{
+    "books_name" : "Coder2",
+    "author": "Two",
+    "year_creat": 350
+}
+
+
+###
+
+DELETE http://127.0.0.1:5000/books/2 HTTP/1.1
